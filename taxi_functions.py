@@ -1,3 +1,5 @@
+import numpy as np
+
 # Haversine distance formula
 def distance(lat1, lat2, lon1,lon2):
     p = 0.017453292519943295 # Pi/180
@@ -20,12 +22,13 @@ def boundaryBox(df, BB):
 #               'min_lat', 
 #               'max_lat'
 
-def isLocation(df, lat, lng, location):
+def isLocation(lat, lng, location, range = 0.5):
+    return (distance(location['lat'], location['lng'], lat, lng) < range)
+
     
-    if lat>=df[location]['min_lat'] and \
-       lat<=df[location]['max_lat'] and \
-       lng>=df[location]['min_lng'] and \
-       lng<=df[location]['max_lng']:
+def isAirport(lat, lng, airport_name):
+    
+    if lat>=nyc_airports[airport_name]['min_lat'] and lat<=nyc_airports[airport_name]['max_lat'] and lng>=nyc_airports[airport_name]['min_lng'] and lng<=nyc_airports[airport_name]['max_lng']:
         return 1
     else:
         return 0
