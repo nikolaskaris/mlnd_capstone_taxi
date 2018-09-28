@@ -15,6 +15,8 @@ Please email [machine-support@udacity.com](mailto:machine-support@udacity.com) i
 
 
 ## Notes for grader
+Datasets: https://www.kaggle.com/c/new-york-city-taxi-fare-prediction/data
+
 
 Data exploration, cleaning: ```nyc_taxi_data_clean.ipynb```
 
