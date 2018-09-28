@@ -17,6 +17,9 @@ Please email [machine-support@udacity.com](mailto:machine-support@udacity.com) i
 ## Notes for grader
 
 Data exploration, cleaning: ```nyc_taxi_data_clean.ipynb```
+
 Model exploration, selection, and tuning: ```nyc_taxi_model.ipynb```
+
 Proposal: ```Udacity Capstone Proposal.pdf```
+
 **Note** The proposal now includes some reflections upon completing the project, with comments on process, findings, and room for future improvement.
